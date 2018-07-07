@@ -1,8 +1,4 @@
-# Using mhart/alpine-node instead of node:0.10
-# because of more up to date dependencies
-# (node:0.10 has a two year old Debian Jessie Image)
-# and much smaller footprint
-FROM mhart/alpine-node:0.10
+FROM node:8-alpine
 
 ENV PORT=8080
 WORKDIR /app
